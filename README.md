@@ -8,12 +8,17 @@ This tool operates as a Flask server, providing two main functionalities via a w
 
 ### 🛡️ Detector Mode
 
+<img width="819" height="843" alt="image" src="https://github.com/user-attachments/assets/8c37c08c-a07e-4e01-8498-b36d279d6cbf" />
+
+
 Analyzes an input string for non-ASCII characters that closely resemble standard Latin letters.
 
   * **Character Analysis:** Breaks down the input to show the Unicode Name and Hex Codepoint for every character.
   * **IDN Punycode Detection:** Automatically checks strings resembling URLs/Domains for non-ASCII characters and provides the resulting Punycode (e.g., `xn--...`) representation, revealing the true underlying domain name.
 
 ### ⚔️ Encoder Mode
+
+<img width="1040" height="835" alt="image" src="https://github.com/user-attachments/assets/665f6a76-2699-41c3-8bb0-30611c0e3342" />
 
 Generates multiple malicious spoof variants from a target string (e.g., `apple.com`).
 
